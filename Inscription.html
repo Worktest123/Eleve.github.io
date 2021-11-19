@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inscription</title>
+<meta charset='utf-8'>
+<link rel='stylesheet' href='style.css'/>
+<link rel="icon" href="sigle.jpg">
+
+</head>
+<body>
+<h1>Formulaire d'inscription</h1>
+<h2>--Veuillez remplir attentivement les champs ci-dessous--</h2>
+<form>
+<fieldset>
+<legend>Inscription</legend>
+<label class='col25'>Code candidat</label><input type='text' id='code' class='col75'><br>
+<label class='col25'>Nom</label><input type='text' id='n' class='col75' ><br>
+<label class='col25'>Prénom</label><input type='text' id='np' class='col75' ><br>
+
+<label class='col25' >Date de naissance</label><input type='date' id='dn' class='col75'><br>
+<label class='col25'>Tel</label><input type='text' id='tel' class='col75' ><br>
+
+<label class='col25'>Type d'examen</label><input type='radio' name='ex' value='cd'  >Code
+<input type='radio' name='ex' value='cir' >Conduite<br>
+
+<label class='col25'>Lieu d'examen</label>
+<select name="centre" id='lx'>
+<option value="r" default>Choisir un centre</option>
+<option value="r">Megrine</option>
+<option value="r">Rades</option>
+<option value="r">Zahra</option>
+
+</select><br>
+<input type='button' value='Générer un mot de passe' id='b1' onclick='pwc()' ></button><br>
+
+<input type='submit' id='envoi' value='Valider' onclick='verif()'>
+<input type='reset' id='annul' value='Annuler' >
+</fieldset>
+<p id='mp'>***</p>
+</form>
+
+ 
+	<script>
+		function verif() {
+			t1=document.getElementById('code').value;
+			if (t1=="")(alert('Invalide Code'));return false;
+			t2=document.getElementById('n').value;
+			if (t2.length!=8){alert('Invalide Nom')};return false;
+			t3=document.getElementById('np').value;
+			if(t3==t3.toUpperCase()){alert('Invalide Prenom')};return false;
+			
+		}
+		
+
+
+
+
+
+
+	</script>
+	</body>
+	</html>   

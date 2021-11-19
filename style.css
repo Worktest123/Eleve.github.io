@@ -1,0 +1,70 @@
+body{
+background-color:#D1F2EB;}
+h1{text-align:center;
+	font-size:30px;
+color:red;
+font-family:Monotype Corsiva;
+style:bold;
+}
+h2{text-align:center;
+	font-size:15px;
+color:gray;
+font-family:Courier New;
+style:italic;
+}
+form{
+	color:blue;
+	margin-left:auto;
+	margin-right:auto;
+	width:600px;
+	height:500px;
+	padding:20px;
+	background-color:rgb(215, 189, 226);
+	font-family:'Georgia';
+	font-size:14px;
+	border-radius:10px;
+	}
+legend{
+	font-style:bold;
+	color:gray;
+	font-size:16px;
+	background-color:white;
+}
+label{
+	font-style:italic;
+	color:blue;
+	padding:12px 12px 12px 0;
+	display:inline-block;
+}
+input{
+	margin-top:10px;
+	border: 1px solid red;
+	font-family:Georgia;
+	font-size:12px;
+	padding:5px;
+	border-radius:5px;
+	box-shadow:5px 5px 5px gray;
+}
+
+input[type=submit],input[type=reset]{
+	width:100px;
+	color:#8800a2;
+	
+}
+
+fieldset{margin-lef:auto;
+   height:450px; ;}
+.col25{width:25%;}
+.col75{width:50%;}
+
+input[type=submit]:hover,input[type=reset]:hover{
+	box-shadow:10px 10px 20px gray;
+	color:#8800a2;
+	}
+	button{
+		border:2px solid black;
+		width:200px;
+	color:blue;
+	box-shadow:10px 10px 20px gray;
+	margin-left:250px;
+	}
